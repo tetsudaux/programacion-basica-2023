@@ -57,17 +57,17 @@ function seleccionarMascotaEnemigo() {
 
 function ataqueFuego () {
     ataqueJugador = 'FUEGO'
-    taqueAleatorioEnemigo()
+    ataqueAleatorioEnemigo()
 }
 
 function ataqueAgua () {
     ataqueJugador = 'AGUA'
-    taqueAleatorioEnemigo()    
+    ataqueAleatorioEnemigo()    
 }
 
 function ataqueTierra () {
     ataqueJugador = 'TIERRA'
-    taqueAleatorioEnemigo()
+    ataqueAleatorioEnemigo()
 }
 
 function ataqueAleatorioEnemigo() {
@@ -80,6 +80,13 @@ function ataqueAleatorioEnemigo() {
     } else {
         ataqueEnemigo = 'TIERRA'
     }
+
+    crearMensaje()
+}
+
+function crearMensaje(){
+    let parrafo = document.createElement('p')
+    parrafo.innerHTML = "Tu mascota ataco con " + ataqueJugador + ". La mascota del enemigo ataco con " + ataqueEnemigo + ""
 }
 
 window.addEventListener("load", iniciarJuego)
