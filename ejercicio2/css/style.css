@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap');
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Fredoka', sans-serif;
 }
 
 body {
@@ -9,10 +15,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #d4cbff; 
-    background: -webkit-linear-gradient(-45deg, #5433ff, #20bdff, #a5fecb); /* Chrome 10-25, Safari 5.1-6 */
+    background: #636363; 
+    background: -webkit-linear-gradient(-45deg, #636363, #a2ab58, #cfd43e); /* Chrome 10-25, Safari 5.1-6 */
     background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 5s ease infinite;
 }
 
 .titulo-proyecto {
@@ -23,6 +29,7 @@ body {
     padding: 10px 20px;
     border-radius: 50px;
     font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 #seleccionar-mascota {
@@ -34,6 +41,11 @@ body {
     border-radius: 30px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas {
+    display: flex;
+
 }
 
 .tarjeta-mokepon {
