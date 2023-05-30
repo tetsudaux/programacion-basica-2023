@@ -50,12 +50,20 @@ body {
 
 .tarjeta-mokepon {
     width: max-content;
-    height: max-content;
+    height: auto;
     padding: 10px;
     background-color: aqua;
     border: solid 2px darkblue;
     border-radius: 10px;
     margin: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+
+}
+
+.tarjeta-mokepon img {
+    width: 75px;
 }
 
 input {
