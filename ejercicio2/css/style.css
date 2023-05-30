@@ -9,6 +9,16 @@ h1, h2, h3, h4, h5 , h6 {
     font-family: 'Fredoka', sans-serif;
 }
 
+p {
+    font-family: 'Chillax', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    font-family: 'Chillax', sans-serif;
+    font-weight: 800;
+}
+
 body {
     height: 90vh;
     display: flex;
@@ -17,7 +27,7 @@ body {
     align-items: center;
     background: #636363; 
     background: -webkit-linear-gradient(-45deg, #636363, #a2ab58, #cfd43e); /* Chrome 10-25, Safari 5.1-6 */
-    background-size: 400% 400%;
+    background-size: 300% 300%;
 	animation: gradient 5s ease infinite;
 }
 
@@ -37,10 +47,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 3px black;
+    /* border: solid 3px black; */
     border-radius: 30px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
 }
 
 .tarjetas {
@@ -52,13 +63,12 @@ body {
     width: max-content;
     height: auto;
     padding: 10px;
-    background-color: aqua;
-    border: solid 2px darkblue;
+    background-color: rgba(43, 40, 6, 0.521);
     border-radius: 10px;
     margin: 5px;
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: center; */
+    
 
 }
 
