@@ -40,24 +40,32 @@
     </section>
 
     <section id="seleccionar-ataque">
-        <h2>Tu ataque</h2>
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+        <h2 class="titulo-seccion">Tu ataque:</h2>
 
-        <p>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💦</button>
-            <button id="boton-tierra">Tierra 🌱</button>
-        </p>
+        <div class="botones-ataques">
+            <button id="boton-fuego" class="boton-ataque">Fuego <img src="./assets/fire.png" alt="Fire" srcset=""></button>
+            <button id="boton-agua" class="boton-ataque">Agua <img src="./assets/water.png" alt="Water" srcset=""></button>
+            <button id="boton-tierra" class="boton-ataque">Tierra <img src="./assets/earth.png" alt="Earth" srcset=""></button>
+        </div>
+
+        <div>
+            <section id="mensajes">
+            </section>
+        
+            <div id="resultado"></div>
+            <div id="ataquesDelJugador"></div>
+            <div id="ataquesDelEnemigo"></div>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">REINICIAR</button>
+            </section>
+        </div>
+
+        <div>
+            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+        </div>
     </section>
-
-    <section id="mensajes">
-    </section>
-
-    <section id="reiniciar">
-        <button id="boton-reiniciar">REINICIAR</button>
-    </section>
-
 
 </body>
 </html>

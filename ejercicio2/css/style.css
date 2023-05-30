@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 , h6 {
 
 p {
     font-family: 'Chillax', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 button {
@@ -68,8 +68,11 @@ body {
     margin: 5px;
     display: flex;
     flex-direction: column-reverse;
-    
+}
 
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    background-color: rgba(105, 99, 26, 0.705);
 }
 
 .tarjeta-mokepon img {
@@ -89,3 +92,44 @@ input {
     background-color: yellow;
     border-radius: 50px;
 }
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 3px black; */
+    border-radius: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+}
+
+#mascota-enemigo, #mascota-jugador {
+    font-weight: 700;
+}
+
+.botones-ataques {
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-ataque {
+    display: flex;
+    margin: 5px;
+    padding: 10px 20px;
+    font-weight: 900;
+    color: yellow;
+    border: 2px solid yellow;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.boton-ataque img {
+    width: 50px;
+}
+
