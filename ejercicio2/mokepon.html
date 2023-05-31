@@ -17,23 +17,23 @@
         <h2 class="titulo-seccion">Escoge tu mascota</h2>
 
         <div class="tarjetas">
+            <input type="radio" name="mascota" id="hipodoge"/>
             <label class="tarjeta-mokepon" for="hipodoge">
                 <p>Hipodoge</p>
                 <img src="./assets/hipodoge.png" alt="Hipodoge" srcset="">
             </label>
-            <input type="radio" name="mascota" id="hipodoge"/>
-    
+            
+            <input type="radio" name="mascota" id="capipepo"/>
             <label class="tarjeta-mokepon" for="capipepo">
                 <p>Capipepo</p>
                 <img src="./assets/capipepo.png" alt="capipepo" srcset="">
             </label>
-            <input type="radio" name="mascota" id="capipepo"/>
     
+            <input type="radio" name="mascota" id="ratigueya"/>
             <label class="tarjeta-mokepon" for="ratigueya">
                 <p>Ratigueya</p>
                 <img src="./assets/ratigueya.png" alt="ratigueya">
             </label>
-            <input type="radio" name="mascota" id="ratigueya"/>
         </div>
 
         <button id="boton-mascota">Seleccionar</button>
@@ -48,23 +48,29 @@
             <button id="boton-tierra" class="boton-ataque">Tierra <img src="./assets/earth.png" alt="Earth" srcset=""></button>
         </div>
 
-        <div>
-            <section id="mensajes">
-            </section>
-        
-            <div id="resultado"></div>
-            <div id="ataquesDelJugador"></div>
-            <div id="ataquesDelEnemigo"></div>
+        <div class="statutes">
+            <div class="status-jugador">
+                <h3>Tu - </h3>
+                <p id="mascota-jugador"></p>
+                <p id="vidas-jugador">3</p>vidas
+                <div id="ataques-del-jugador"></div>
+            </div>
+            <div class="status-enemigo">
+                <h3>Enemigo - </h3>
+                <p id="mascota-enemigo"></p>
+                <p id="vidas-enemigo">3</p>vidas
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>
+
+        <div id="mensajes">
+            <p id="resultado"></p>
 
             <section id="reiniciar">
-                <button id="boton-reiniciar">REINICIAR</button>
+                <button id="boton-reiniciar">Volver a jugar <img src="./assets/repeat.png" alt="repeat" srcset=""> </button>
             </section>
         </div>
-
-        <div>
-            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
-        </div>
+        
     </section>
 
 </body>
